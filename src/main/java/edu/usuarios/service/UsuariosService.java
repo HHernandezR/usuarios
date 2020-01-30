@@ -13,6 +13,6 @@ public interface UsuariosService {
 	public ResponseEntity<Optional<Usuarios>> saveUsuario(UsuarioRequest usuario);
 	public ResponseEntity<Optional<Usuarios>> updateUsuario(UsuarioUpdateRequest usuario);
 	public ResponseEntity<Boolean> deleteUsuario(Long idUsuario);
-	public Optional<Usuarios> findUsuarioFullName(String nombre, String apaterno, String amaterno);
+	public ResponseEntity<Optional<Usuarios>> findUsuarioFullName(String nombre, String aPaterno, String aMaterno);
 
 }
